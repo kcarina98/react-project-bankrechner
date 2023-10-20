@@ -6,9 +6,9 @@ import Banana from "./assets/components/Banana";
 
 function App() {
   return (
-    <>
+    <section>
       <Banana />
-    </>
+    </section>
   );
 }
 

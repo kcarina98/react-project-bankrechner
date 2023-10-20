@@ -15,22 +15,25 @@ const Banana = () => {
       setSaldo(saldo - betrag);
       setBetrag("");
     } else {
-      window.alert("Du kannst leider nicht so viel Geld abheben :-(");
+      window.alert("Du bist pleite :-(");
       setBetrag("");
     }
   };
 
   return (
-    <section>
-      <h1 className="title">Banana Bank</h1>
+    <article>
+      <h1 className="title">BANANA</h1>
+      <h1 className="title">BANK</h1>
       <div className="konto">
-        <p className="giro">Mein Girokonto</p>
+        <p className="giro">Kontostand</p>
         <p className="saldo">{saldo.toFixed(2)} €</p>
         <form>
           <input
             className="geldbetrag"
             type="number"
             placeholder="Betrag in €"
+            required
+            step=".01"
             onChange={(event) => setBetrag(event.target.value)}
             value={betrag}
           />
@@ -42,7 +45,10 @@ const Banana = () => {
           Auszahlen
         </button>
       </div>
-    </section>
+      <button className="reload" onClick={() => location.reload()}>
+        reload
+      </button>
+    </article>
   );
 };
 

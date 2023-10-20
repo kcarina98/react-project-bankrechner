@@ -1,59 +1,76 @@
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
 @import url(http://fonts.googleapis.com/css?family=Ruluko);
 
-body {
-  font-family: "Ruluko", sans-serif;
-  margin: 0px auto;
+.title {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 70px;
   text-align: center;
-  width: 700px;
+  letter-spacing: 10px;
 }
 
-.title {
-  color: #fbec5d;
-  font-family: "Oleo Script", cursive;
-  font-size: 50px;
-  margin-top: 100px;
+h1:first-of-type {
+  padding-top: 7%;
+  color: rgb(0, 145, 120);
 }
 
 .konto {
-  color: #6b3e26;
-  background-color: #fffbc9;
-  border: 1px solid #fbec5d;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1623150502742-6a849aa94be4?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   border-radius: 15px;
-  display: inline-block;
-  padding: 10px;
-  width: 300px;
+  display: block;
+  padding: 50px;
+  width: 500px;
   font-size: 25px;
-}
-
-.giro {
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 .saldo {
-  background-color: #fbec5d;
   color: #ffffff;
-  border: 1px solid #fbec5d;
+  background-color: rgba(255, 255, 255, 0.325);
   border-radius: 15px;
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  margin: 30px 0;
   padding: 25px 0px;
-  box-shadow: 0 0 20px #6b3e2656;
+  box-shadow: 0 0 20px white;
 }
 .geldbetrag {
-  min-width: 125px;
-  border: 1px solid #eee;
+  border: none;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 10px 20px;
   text-align: center;
-  box-shadow: 0 0 10px #fddc3a;
 }
 .auszahlen,
 .einzahlen {
   margin: 20px 5px;
-  background-color: #fbec5d;
-  color: #6b3e26;
+  background-color: rgb(0, 145, 120);
+  color: white;
   border-radius: 20px;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: transparent;
+  transition: 1s;
+  border: 1px solid rgb(0, 145, 120);
+  color: rgb(46, 46, 46);
+}
+
+.reload {
+  background-color: rgb(0, 145, 120);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+
+.reload:hover {
+  color: white;
 }
